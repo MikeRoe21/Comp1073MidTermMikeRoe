@@ -6,7 +6,7 @@ var travelReport = (function () {
 "use strict";
 console.log("App Started...")
 
-            // Injecting HTML content to the page using JavaScript
+            // Injecting HTML content to the page using JavaScript, each paragraph describes a different section of the page.
             let IntroParagraph = document.getElementById("IntroParagraph");
             let Intro = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals. Greece has 1,400 islands, though only 230 of them are inhabited. And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.";
             IntroParagraph.textContent = Intro;
@@ -53,7 +53,7 @@ console.log("App Started...")
             Gavdos.textContent = NinthIsland;
 
 
-            //Assigning variable names to element id
+            // Assigning variable names to element id
 
             let firstName = document.getElementById("firstName");
             document.getElementById("firstName").value;
@@ -79,7 +79,7 @@ console.log("App Started...")
                 
 
 
-
+// End of the IIFE (Immediately Involked Function Expression) Statement
 
 })();
 
