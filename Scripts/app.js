@@ -1,9 +1,12 @@
+// app.js by Mike Roe (student#200166222), hosted at http://comp1073midtermmikeroe.azurewebsites.net/ through github
+
 // setup your IIFE (Immediately Invoked Function Expression)
 var travelReport = (function () {
 
 "use strict";
 console.log("App Started...")
 
+            // Injecting HTML content to the page using JavaScript
             let IntroParagraph = document.getElementById("IntroParagraph");
             let Intro = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals. Greece has 1,400 islands, though only 230 of them are inhabited. And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.";
             IntroParagraph.textContent = Intro;
@@ -48,6 +51,32 @@ console.log("App Started...")
             let Gavdos = document.getElementById("Gavdos");
             let NinthIsland = "Near the more well-known Crete, Gavdos is the most southern island in Greece — and the most southern spot in Europe discounting the Canaries. Only accessible by ferry, the remote island has only about 50 permanent residents, and can feel like your private playground. Local legend has it that the island was the home of goddess Calypso, who kept Odysseus prisoner here. Today, a favorite tourist activity is to visit the spot believed to be her cave. Be warned, you won't find any luxury hotels here. While the romantically under-developed, super laid back island has a number of rooms for rent, those are limited, as the real draw here for many is the free, seaside camping.";
             Gavdos.textContent = NinthIsland;
+
+
+            //Assigning variable names to element id
+
+            let firstName = document.getElementById("firstName");
+            document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName");
+            document.getElementById("lastName").value;
+            let email = document.getElementById("email");
+            document.getElementById("email").value;
+            let comments = document.getElementById("comments");
+            document.getElementById("comments").value;
+            let ButtonSubmit = document.getElementById("ButtonSubmit");
+
+            // Stops the button from submitting the form
+            ButtonSubmit.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Prints the captured form data to the console so we may view it
+                console.log(firstName.value);
+                console.log(lastName.value);
+                console.log(email.value);
+                console.log(comments.value);
+
+                 });
+                
 
 
 
